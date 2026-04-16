@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Экологический проект Красноярска: проблемы воздуха, воды, отходов и зелёных зон. Присоединяйтесь к сообществу ЭКОКРАСНОЯРСК.">
+    <title>Экология Красноярска | ЭкоКрасноярск — школьный проект</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="logo">🌿 ЭкоКрасноярск</span>
+                <span class="tagline" data-i18n="tagline">Мы беспокоимся за экологию нашего края</span>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#about" data-i18n="nav.about">О нас</a></li>
+                    <li><a href="#problems-solutions" data-i18n="nav.problems">Проблемы & Решения</a></li>
+                    <li><a href="#initiatives" data-i18n="nav.initiatives">Инициативы</a></li>
+                    <li><a href="#get-involved" data-i18n="nav.help">Как помочь</a></li>
+                    <li><a href="#news" data-i18n="nav.news">Новости</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <i class="fas fa-globe"></i> <span id="langToggleText">EN</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Тёмная тема">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Меню" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#about" data-i18n="nav.about">О нас</a></li>
+                <li><a href="#problems-solutions" data-i18n="nav.problems">Проблемы & Решения</a></li>
+                <li><a href="#initiatives" data-i18n="nav.initiatives">Инициативы</a></li>
+                <li><a href="#get-involved" data-i18n="nav.help">Как помочь</a></li>
+                <li><a href="#news" data-i18n="nav.news">Новости</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 data-i18n="hero.title">Красноярск дышит будущим</h1>
+                <p data-i18n="hero.subtitle">Объединяем жителей, эко-активистов и экспертов для решения экологических вызовов города. 40.000+ участников, 37 реализованных проектов.</p>
+                <button class="btn-primary pulse-btn" id="heroBtn" data-i18n="hero.button">Узнать больше <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">🌱 О нас — экологическое сообщество</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p data-i18n="about.text1"><strong>«ЭкоКрасноярск»</strong> — Мы группа которая хочет создать сообщество экологов, урбанистов и активных жителей, которым не всё равно на качество воздуха, воду Енисея и зелёные зоны. Наш проект — ответ на ухудшающуюся экологическую обстановку в одном из крупнейших промышленных центров Сибири.</p>
+                        <p data-i18n="about.text2">Наша цель — системно решать экологические проблемы через диалог с бизнесом, властью и жителями. Мы проводим мониторинг выбросов, высаживаем деревья, внедряем раздельный сбор отходов и помогаем городу перейти к устойчивому развитию. Вместе мы — голос природы Красноярска.</p>
+                        <p data-i18n="about.text3">💚 <strong>Присоединяйтесь</strong> — каждый может внести вклад в здоровье нашего города.</p>
+                    </div>
+                    <div class="about-stats" id="statsSection">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="40">0</div>
+                            <p data-i18n="stats.volunteers">тысяч, активных волонтёров</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="37">0</div>
+                            <p data-i18n="stats.projects">реализованных проектов направленных на защиту экологии</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="12">0</div>
+                            <p data-i18n="stats.recycled">тонн отходов на переработку за последний год</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <p data-i18n="stats.trees">тысяч, высаженных деревьев за последний год</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problems-solutions">
+            <div class="container">
+                <h2 class="section-title" data-i18n="problems.title">⚠️ Экологические проблемы Красноярска и наши решения</h2>
+                <div class="section-sub" data-i18n="problems.sub">Проблема → решение: конкретные шаги, которые мы можем реализовать или продвигать</div>
+                <div class="solutions-grid">
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-smog"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.air.title">Загрязнение воздуха</h3>
+                            <p data-i18n="problem.air.desc">Чёрное небо, превышение ПДК по бензапирену и взвешенным частицам. Основные источники — ТЭЦ, частный сектор с углём, автомобили.</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-seedling"></i></div>
+                        <div class="solution-title" data-i18n="solution.air.title">🌬️ Решение: «Чистый воздух — городу»</div>
+                        <div class="solution-desc" data-i18n="solution.air.desc">
+                            ✅ Мониторинг в реальном времени (сеть датчиков).<br>
+                            ✅ Перевод частных домов на экологичное отопление (биотопливо, электрокотлы).<br>
+                            ✅ Зелёные пояса: высадка 5000 деревьев в промышленных районах.
+                        </div>
+                    </div>
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-trash-alt"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.waste.title">Стихийные свалки & переработка</h3>
+                            <p data-i18n="problem.waste.desc">Отсутствие культуры раздельного сбора, переполненные полигоны, нелегальные навалы мусора вблизи жилых массивов.</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-recycle"></i></div>
+                        <div class="solution-title" data-i18n="solution.waste.title">♻️ Решение: «Ноль отходов»</div>
+                        <div class="solution-desc" data-i18n="solution.waste.desc">
+                            ✅ Сеть эко-пунктов приёма вторсырья в каждом районе.<br>
+                            ✅ Ежемесячные субботники + рейды по ликвидации незаконных свалок.<br>
+                            ✅ Образовательные лекции в школах и на предприятиях.
+                        </div>
+                    </div>
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-water"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.water.title">Загрязнение реки Енисей</h3>
+                            <p data-i18n="problem.water.desc">Неочищенные стоки, промышленные сбросы, ухудшение качества питьевой воды и гибель биоресурсов.</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-droplet"></i></div>
+                        <div class="solution-title" data-i18n="solution.water.title">💧 Решение: «Чистый Енисей»</div>
+                        <div class="solution-desc" data-i18n="solution.water.desc">
+                            ✅ Мониторинг сбросов предприятий (общественный контроль).<br>
+                            ✅ Модернизация очистных сооружений города (совместные петиции властям).<br>
+                            ✅ Волонтёрские рейды по очистке береговой линии.
+                        </div>
+                    </div>
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-tree"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.green.title">Сокращение зелёных зон</h3>
+                            <p data-i18n="problem.green.desc">Застройка парков, неконтролируемая вырубка, дефицит комфортных рекреаций.</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <div class="solution-title" data-i18n="solution.green.title">🌳 Решение: «Зелёный щит»</div>
+                        <div class="solution-desc" data-i18n="solution.green.desc">
+                            ✅ Озеленение дворов и скверов: акции «Посади дерево».<br>
+                            ✅ Юридическая защита особо охраняемых природных территорий.<br>
+                            ✅ Создание народных экологических троп с информационными стендами.
+                        </div>
+                    </div>
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-car"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.auto.title">Выбросы от автомобилей</h3>
+                            <p data-i18n="problem.auto.desc">Автопарк Красноярска продолжает расти, доля устаревших машин высока. Выхлопные газы – основной источник оксидов азота, сажи и углеводородов в центре города.</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-bus"></i></div>
+                        <div class="solution-title" data-i18n="solution.auto.title">🚗 Решение: «Экомобильность»</div>
+                        <div class="solution-desc" data-i18n="solution.auto.desc">
+                            ✅ Стимулирование перехода на электротранспорт (зарядные станции, льготы).<br>
+                            ✅ Развитие сети велодорожек и каршеринга электромобилей.<br>
+                            ✅ Общественный контроль выхлопов: «Эко-такси» с замерами.<br>
+                            ✅ Ежегодные акции «День без автомобиля» с перекрытием центральных улиц.
+                        </div>
+                    </div>
+                    <div class="eco-card">
+                        <div class="problem-icon"><i class="fas fa-industry"></i></div>
+                        <div class="card-problem">
+                            <h3 data-i18n="problem.factory.title">Выбросы от заводов</h3>
+                            <p data-i18n="problem.factory.desc">Промышленные предприятия Красноярска (алюминиевый завод, ТЭЦ, машиностроение) выбрасывают тонны загрязнителей: диоксид серы, оксиды азота, тяжёлые металлы. Это одна из главных причин «чёрного неба».</p>
+                        </div>
+                        <div class="solution-icon"><i class="fas fa-filter"></i></div>
+                        <div class="solution-title" data-i18n="solution.factory.title">🏭 Решение: «Экологизация промышленности»</div>
+                        <div class="solution-desc" data-i18n="solution.factory.desc">
+                            ✅ Установка современных фильтров и систем газоочистки на заводах.<br>
+                            ✅ Внедрение системы автоматического контроля выбросов (онлайн-доступ для жителей).<br>
+                            ✅ Петиции и общественный мониторинг за соблюдением ПДВ (предельно допустимых выбросов).<br>
+                            ✅ Стимулирование предприятий к переходу на наилучшие доступные технологии (НДТ).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="initiatives">
+            <div class="container">
+                <h2 class="section-title" data-i18n="initiatives.title">🌍 Наши инициативы — делаем вместе</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <i class="fas fa-broom"></i>
+                        <h3 data-i18n="initiative1.title">Субботники «Чистый город»</h3>
+                        <p data-i18n="initiative1.desc">Ежемесячные уборки в парках, на набережной и в лесных массивах. Присоединяйтесь!</p>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-recycle"></i>
+                        <h3 data-i18n="initiative2.title">Эко-сбор: макулатура и батарейки</h3>
+                        <p data-i18n="initiative2.desc">В школах установлены контейнеры. За год собираем 3,2 тонны макулатуры и 500 кг батареек.</p>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-chalkboard-user"></i>
+                        <h3 data-i18n="initiative3.title">Экодежурный класс</h3>
+                        <p data-i18n="initiative3.desc">Старшеклассники проводят уроки экологии в начальной школе, рассказывают о раздельном сборе.</p>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 data-i18n="initiative4.title">Мониторинг воздуха</h3>
+                        <p data-i18n="initiative4.desc">Сеть из 15 датчиков качества воздуха с открытыми данными на сайте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-involved">
+            <div class="container">
+                <h2 class="section-title" data-i18n="help.title">💚 Как вы можете помочь</h2>
+                <div class="help-grid">
+                    <div class="help-card" data-action="volunteer">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3 data-i18n="help.volunteer.title">Стань волонтёром</h3>
+                        <p data-i18n="help.volunteer.desc">Присоединяйся к субботникам, эко-рейдам, посадкам деревьев.</p>
+                        <!-- <button class="btn-outline volunteer-btn" data-i18n="help.volunteer.btn">Записаться</button> -->
+                    </div>
+                    <div class="help-card" data-action="map">
+                        <i class="fas fa-recycle"></i>
+                        <h3 data-i18n="help.map.title">Раздельный сбор</h3>
+                        <p data-i18n="help.map.desc">Используй карту пунктов приёма вторсырья. Каждая бутылка имеет значение.</p>
+                        <!-- <button class="btn-outline map-btn" data-i18n="help.map.btn">Смотреть карту</button> -->
+                    </div>
+                    <div class="help-card" data-action="checklist">
+                        <i class="fas fa-leaf"></i>
+                        <h3 data-i18n="help.checklist.title">Эко-привычки</h3>
+                        <p data-i18n="help.checklist.desc">Скачай чек-лист «10 простых шагов к экологичной жизни в городе».</p>
+                        <!-- <button class="btn-outline checklist-btn" data-i18n="help.checklist.btn">Скачать</button> -->
+                    </div>
+                    <div class="help-card" data-action="donate">
+                        <i class="fas fa-donate"></i>
+                        <h3 data-i18n="help.donate.title">Поддержать проекты</h3>
+                        <p data-i18n="help.donate.desc">Пожертвования идут на закупку саженцев, датчиков воздуха и эко-материалы.</p>
+                        <!-- <button class="btn-outline donate-btn" data-i18n="help.donate.btn">Помочь рублём</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="container">
+                <h2 class="section-title" data-i18n="news.title">📢 Последние новости и события</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">15 апреля 2026</div>
+                        <h3 data-i18n="news1.title">Начались масштабные проверки предприятий</h3>
+                        <p class="news-short" data-i18n="news1.short">Минэкологии совместно с полицией проверяет предприятия на соблюдение новых экологических требований.</p>
+                        <div class="news-full" style="display: none;" data-i18n="news1.full">
+                            Проверяют, как выполняется закон, запрещающий сжигать несортовой уголь и использовать котлы с ручной загрузкой. В Красноярске бизнес уже адаптировался к новым правилам. Для предпринимателей предусмотрены льготные кредиты до 5 млн рублей, а для крупных промышленных предприятий — до 20 млн рублей. Источник: <a href="http://www.vesti-krasnoyarsk.ru/news/obshestvo/post-59325/" target="_blank">Вести. Красноярск</a>.
+                        </div>
+                        <a href="#" class="read-more" data-i18n="news.readmore">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">4 апреля 2026</div>
+                        <h3 data-i18n="news2.title">В городе установили умные урны для раздельного сбора</h3>
+                        <p class="news-short" data-i18n="news2.short">Для пластика, стекла и других отходов появились специальные цветные контейнеры.</p>
+                        <div class="news-full" style="display: none;" data-i18n="news2.full">
+                            В Красноярске установили урны для раздельного сбора отходов. Для каждого вида мусора используются мешки определённого цвета: жёлтые — для пластика, зелёные — для стекла, красные — для прочего. Отходы везут на полигон, где на сортировочной линии они проходят досортировку. В мэрии надеются, что со временем у горожан появится новая экопривычка. Источник: <a href="http://www.vesti-krasnoyarsk.ru/news/obshestvo/post-55991/" target="_blank">Вести. Красноярск</a>.
+                        </div>
+                        <a href="#" class="read-more" data-i18n="news.readmore">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">30 марта 2026</div>
+                        <h3 data-i18n="news3.title">Во время «чёрного неба» у трёх предприятий нашли нарушения</h3>
+                        <p class="news-short" data-i18n="news3.short">Специалисты Минэкологии провели рейды в период НМУ и выявили предприятия без газоочистного оборудования.</p>
+                        <div class="news-full" style="display: none;" data-i18n="news3.full">
+                            С 1 по 3 марта, в период действия режима неблагоприятных метеоусловий (НМУ), были проведены рейды в Красноярске, Канске, Ачинске, Минусинске и Лесосибирске. В краевом центре нарушения выявлены у трёх предприятий из шести: у двух отсутствовало газоочистное оборудование, а одно не было поставлено на учёт. С 1 марта 2026 года вступил в силу обновлённый порядок, позволяющий вводить ограничения точечно, а предприятия обязаны снижать нагрузку на воздух не менее чем на 20%. Источник: <a href="https://ecology.russia24.pro/krasn-krai/422559080/" target="_blank">НИА-Красноярск</a>.
+                        </div>
+                        <a href="#" class="read-more" data-i18n="news.readmore">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">21 марта 2026</div>
+                        <h3 data-i18n="news4.title">Молодёжь собрала более тонны макулатуры и открыла эко-мастерскую</h3>
+                        <p class="news-short" data-i18n="news4.short">Бойцы трудового отряда главы города подвели итоги осеннего сбора вторсырья.</p>
+                        <div class="news-full" style="display: none;" data-i18n="news4.full">
+                            За две недели ребята собрали свыше тонны макулатуры, около 190 кг батареек, 35 кг пластика и 10 кг просроченных лекарств. Точки приёма работают в каждом районе на базе молодёжных центров. Кроме того, в Железнодорожном районе в волонтёрском центре «Доброе дело» открылась экологическая мастерская «Кладовка» с оборудованием для переработки пластика в материал для 3D-печати. Источник: <a href="http://www.vesti-krasnoyarsk.ru/news/obshestvo/post-58924/" target="_blank">Вести. Красноярск</a>.
+                        </div>
+                        <a href="#" class="read-more" data-i18n="news.readmore">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">15 марта 2026</div>
+                        <h3 data-i18n="news5.title">На берегу Енисея прошла генеральная уборка «Оберегай»</h3>
+                        <p class="news-short" data-i18n="news5.short">Волонтёры, школьники и энергетики собрали около 50 мешков мусора на косе Орлиха.</p>
+                        <div class="news-full" style="display: none;" data-i18n="news5.full">
+                            В Красноярске прошла экологическая акция «Оберегай». Это федеральный благотворительный волонтёрский проект группы компаний «РусГидро», который проводится ежегодно уже больше 10 лет. За все годы волонтёры вывезли тонны хлама. В этот раз на уборку потратили час и собрали около 50 мешков мусора. Источник: <a href="http://www.vesti-krasnoyarsk.ru/news/obshestvo/post-49222/" target="_blank">Вести. Красноярск</a>.
+                        </div>
+                        <a href="#" class="read-more" data-i18n="news.readmore">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentation">
+            <div class="container presentation-block">
+                <div class="presentation-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h2 data-i18n="presentation.title">Школьный проект по экологии Красноярска</h2>
+                    <p data-i18n="presentation.desc">Данный сайт создан в рамках учебного проекта учеников 10А класса МАОУ СШ №91. Здесь собрана информация об экологических проблемах города и возможных путях их решения.</p>
+                    <div class="presentation-buttons">
+                        <a href="https://1drv.ms/p/c/806f2edc6332e93b/IQAg_CrEc2l3QazCEt0EhSqIAddB3G8AmxaprpsLrGc7ehU?e=GtlwSH" target="_blank" class="btn-primary" id="presentationBtn" data-i18n="presentation.button">📑 Смотреть презентацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ЭКОКРАСНОЯРСК</h3>
+                <p data-i18n="footer.desc">Объединяем тех, кому не всё равно. Вместе мы сможем изменить экологию города.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.contacts">Контакты</h4>
+                <p><i class="fas fa-phone"></i> +7 (995) 074-32-24</p>
+                <p><i class="fas fa-envelope"></i> eco@krasnoyarsk.ru</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.social">Соцсети</h4>
+                <div class="social-links">
+                    <a href="https://vk.com/krasnoyarsk_protiv?ysclid=mnh7cgb2f3774215415" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/s/minecokras/3132" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxNGB3IcPbUTZ78HkXG6RHw" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© <span id="currentYear"></span> Зелёное сообщество Красноярска | Школьный проект</p>
+        </div>
+    </footer>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
